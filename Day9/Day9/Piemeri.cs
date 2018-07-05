@@ -18,6 +18,8 @@ namespace Day9
             // Izvada visus vardus, ieskaitot nulles,
             // ekstra - izvada tikai pilnas vietas.
             
+        string Empty = (Vietas[0]);
+
 
             for (int i = 0; i < 12; i++)
             {
@@ -32,13 +34,29 @@ namespace Day9
 
             for (int i = 0; i < 12; i++)
             {
-                if (Vietas[i] != "0")
+                if (Vietas[i] != "0" )
                 {
+                    
                     Console.WriteLine((i + 1) + ". Seit atrodas: " + Vietas[i]);
                 }
                 else
                 {
-                    Console.WriteLine((i + 1) + ". Galds ir tukss");
+                    if (Vietas[i] == "0")
+                    {
+                        Console.WriteLine("Jaievada vertibas!");
+                        break;
+
+                    }
+                   /* else
+                    {
+
+                        if (Vietas[i] == "")
+                        {
+                            Console.WriteLine("Jaievada vertibas!");
+                            break;
+                        }
+                    }
+                    */
 
                 }
             }
