@@ -15,7 +15,7 @@ namespace Day9
             int Choice = 1;
             while (Choice != 0)
             {
-                Console.WriteLine("Izveleties uzdevumu- 1: (0: Iziet!)");
+                Console.WriteLine("Izveleties uzdevumu- 1: RaditMasivu 2: Printet vertibas 3: Izdzest vertibas (0: Iziet!)");
 
                 Choice = Convert.ToInt16(Console.ReadLine());
 
@@ -26,15 +26,21 @@ namespace Day9
                         break;
 
                     case 1:
-                        task1.Klase();
+                        task1.Ievade();
 
                         
                         break;
                     case 2:
-
+                        task1.Print();
 
                         break;
-                  
+                      
+                    case 3:
+                        task1.Izdzest();
+
+                        break;
+
+
 
                     default:
                         Console.WriteLine("Nepareiza ievade!");
